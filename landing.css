@@ -5,6 +5,7 @@
   --ace-celeste: #b5c3f3;
   --ace-blanco: #e7f2fd;
   --ace-gris: #abafb2;
+  --header-height: 65px
 }
 
 /* Reset + Tipografía */
@@ -13,6 +14,16 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+html {
+  scroll-behavior: smooth; /* opcional: scroll suave */
+  scroll-padding-top: var(--header-height); /* para navegadores que lo soportan */
+}
+
+/* para todos los elementos objetivo con id (secciones) */
+[id] {
+  scroll-margin-top: calc(var(--header-height) + 8px); /* evita solapado; ajusta el +8px si hace falta */
 }
 
 body {
