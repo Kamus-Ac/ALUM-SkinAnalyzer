@@ -6,6 +6,7 @@
   --ace-verde: #16A34A;
   --ace-amarillo: #FBBF24;
   --ace-gris: #F9FAFB;
+  --ace-gris: #abafb2;
 }
 
 /* Reset + Tipografía */
@@ -18,7 +19,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: var(--ace-blanco);
+    background-color: var(--ace-gris);
     color: var(--ace-negro);
     line-height: 1.6;
 }
@@ -102,7 +103,7 @@ img {
   color: #555;
 }
 
-.btn-whatsapp {
+.btn-purchase {
   background-color: var(--ace-azul);
   color: white;
   padding: 1rem 2rem;
@@ -114,7 +115,7 @@ img {
   transition: 0.3s;
 }
 
-.btn-whatsapp:hover {
+.btn-purchase:hover {
   background-color: #1A2E6E;
   transform: scale(1.05);
 }
