@@ -1,0 +1,67 @@
+{
+  "faces": [
+    {
+      "face_token": "abc123",
+      "attributes": {
+        "age": { "value": 22 },
+        "gender": { "value": "Female" },
+        "smile": { "value": 85.3, "threshold": 50 },
+        "emotion": {
+          "anger": 0.01,
+          "happiness": 0.92,
+          "neutral": 0.04,
+          "sadness": 0.01
+        },
+        "beauty": {
+          "female_score": 79.5,
+          "male_score": 75.3
+        },
+        "eyestatus": {
+          "left_eye_status": { "occlusion": 0.0, "open": 0.99 },
+          "right_eye_status": { "occlusion": 0.0, "open": 0.98 }
+        },
+        "facequality": { "value": 0.94, "threshold": 0.7 },
+        "skinstatus": {
+          "health": 0.91,
+          "stain": 0.02,
+          "acne": 0.1,
+          "dark_circle": 0.05
+        }
+      }
+    }
+  ]
+}
+
+
+
+
+age	
+Edad estimada del rostro	
+Mostrar un “rango de edad percibida” para comparar con la real (ej: “Tu piel luce como de 24 años”)
+
+gender	
+Sexo estimado	
+Para personalizar consejos (productos para piel masculina o femenina)
+
+emotion	
+Nivel de emociones detectadas (alegría, tristeza, enojo, etc.)	
+Para mostrar mensajes empáticos (“Parece que hoy estás cansado, hidrátate bien 💧”)
+
+smile	
+Nivel de sonrisa (0–100)	
+Para gamificar (“¡Tu sonrisa mejora tu análisis! 😄”)
+
+beauty	
+Puntuación de belleza estimada	Mostrarlo de forma divertida o como un "índice de luminosidad"
+
+eyestatus	
+Si los ojos están abiertos/cerrados, o si hay oclusión	
+Filtrar selfies con ojos cerrados o mala detección
+
+facequality	
+Calidad de la imagen (iluminación, nitidez)	
+Detectar si la selfie está borrosa y pedir que se repita
+
+skinstatus	
+Estado de la piel (salud, manchas, acné, ojeras)	
+Base principal del análisis y recomendaciones de cuidado
