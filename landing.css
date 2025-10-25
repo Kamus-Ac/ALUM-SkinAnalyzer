@@ -1,11 +1,9 @@
 /* Paleta de colores*/
 :root {
   --ace-negro: #000000;
-  --ace-blanco: #FFFFFF;
-  --ace-azul: #1E40AF;
-  --ace-verde: #16A34A;
-  --ace-amarillo: #FBBF24;
-  --ace-gris: #F9FAFB;
+  --ace-azul: #161262;
+  --ace-celeste: #b5c3f3;
+  --ace-blanco: #e7f2fd;
   --ace-gris: #abafb2;
 }
 
@@ -18,7 +16,7 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: Lato;
     background-color: var(--ace-gris);
     color: var(--ace-negro);
     line-height: 1.6;
@@ -37,7 +35,8 @@ img {
 
 /*---- Header ----*/
 .header {
-  background-color: var(--ace-blanco);
+  background-color: var(--ace-negro);
+  color: var(--ace-celeste);
   padding: 1rem 0;
   border-bottom: 2px solid #eee;
   position: sticky;
@@ -66,7 +65,7 @@ img {
 .nav a {
   margin-left: 1.5rem;
   text-decoration: none;
-  color: var(--ace-negro);
+  color: var(--ace-blanco);
   font-weight: 700;
   transition: color 0.3s;
 }
@@ -74,6 +73,36 @@ img {
   color: var(--ace-azul);
 }
 
+/*---- facial AI ----*/
+.facialAI{
+  padding: 4rem 0;
+  background-color: var(--ace-blanco);
+}
+
+.ai-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.ai-content h3{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.facial-ai {
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-container
+{
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+}
 
 /*---- Hero ----*/
 .hero {

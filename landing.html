@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="landing.css">
     <title>ALUM - Inicio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -14,11 +17,12 @@
         <div class="container">
             <div class="logo">
                 <img src="images/logo-generico.png" alt="logo" class="logo-img">
-                <span class="brand-name">ALUM</span>
+                <span class="brand-name" class="Header.text">ALUM</span>
             </div>
 
             <nav class="nav">
-                    <a href="#inicio">Inicio</a>
+                    <a href="#">Inicio</a>
+                    <a href="#SAI">LumAI</a>
                     <a href="#productos">Productos</a>
                     <a href="#contacto">Contacto</a>
             </nav>
@@ -41,16 +45,34 @@
                 </a>
             </div>
 
-            <div class="hero-img">
+            <div class="container">
                 <img src="Images/plantilla-producto.png" alt="AceBebidas">
             </div>
 
         </div>
     </section>
-
+    <!-- Analisis facial AI -->
+    <section class="facialAI" id="SAI">
+        <div class="container ai-grid">
+            <div class="facial-ai">
+                <img src="Images/face.jpeg" alt="Analisis facial">
+            </div>
+            <div class="ai-content">
+                <h3>Integramos un sistema de análisis facial con IA y un asesor digital inteligente que ofrece recomendaciones personalizadas para el cuidado de la piel masculina.</h3>
+                <div class="container btn-container">
+                <a href="#" class="btn-purchase">
+                    Subir foto
+                </a>
+                <a href="#" class="btn-purchase">
+                    Analizar
+                </a>            
+                </div>    
+            </div>
+        </div>
+    </section>
 
     <!-- Productos -->
-    <section class="productos-slider">
+    <section class="productos-slider" id="productos">
         <div class="container">
             <h2>Productos disponibles</h2>
             
