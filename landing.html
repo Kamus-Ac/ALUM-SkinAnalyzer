@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="landing.css">
+    <script src="landing.js"></script>
     <title>ALUM - Inicio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +17,7 @@
     <header class="header">
         <div class="container">
             <div class="logo">
-                <img src="images/logo-generico.png" alt="logo" class="logo-img">
+                <img src="images/logo-oficial.png" alt="logo" class="logo-img">
                 <span class="brand-name" class="Header.text">ALUM</span>
             </div>
 
@@ -46,7 +47,7 @@
             </div>
 
             <div class="container">
-                <img src="Images/plantilla-producto.png" alt="AceBebidas">
+                <img src="Images/producto-oficial.jpg" alt="AceBebidas" height="20px">
             </div>
 
         </div>
@@ -72,35 +73,34 @@
     </section>
 
     <!-- Productos -->
-    <section class="productos-slider" id="productos">
+    <section id="productos" class="productos-slider">
         <div class="container">
-            <h2>Productos disponibles</h2>
-            
-            <div class="grid">
-                <div class="card">
-                    <img src="Images/plantilla-producto.png" alt="Combo Fernet">
-                    <h3>Producto 1</h3>
-                    <p>ALUM plus iluminum</p>
-                    <span class="price">$25.00</span>
+            <h2>Productos</h2>
+
+            <div class="carousel" aria-label="Carrusel de producto">
+                <button class="carousel-btn carousel-btn--left" aria-label="Anterior">&larr;</button>
+
+                <div class="carousel-viewport">
+                    <ul class="carousel-track">
+                        <li class="carousel-slide">
+                            <img src="images/producto-oficial.jpg" alt="Producto foto 1">
+                        </li>
+                        <li class="carousel-slide">
+                            <img src="images/face.jpeg" alt="Producto foto 2">
+                        </li>
+                        <li class="carousel-slide">
+                            <img src="images/logo-generico.png" alt="Producto foto 3">
+                        </li>
+                    </ul>
                 </div>
-                <div class="card">
-                    <img src="Images/plantilla-producto.png" alt="Combo Campari">
-                    <h3>Producto 2</h3>
-                    <p>producto ALUM</p>
-                    <span class="price">$$$</span>
-                </div>
-                <div class="card">
-                    <img src="Images/plantilla-producto.png" alt="Combo Smirnoff Original">
-                    <h3>Producto 3</h3>
-                    <p>producto ALUM</p>
-                    <span class="price">25.000$</span>
-                </div>
-                <div class="card">
-                    <img src="Images/plantilla-producto.png" alt="Combo Quilmes">
-                    <h3>Producto 4</h3>
-                    <p>Prodcuto ALUM</p>
-                    <span class="price">25.000$</span>
-                </div>
+
+                <button class="carousel-btn carousel-btn--right" aria-label="Siguiente">&rarr;</button>
+            </div>
+
+            <div class="carousel-dots" role="tablist" aria-label="Indicadores del carrusel">
+                <button class="dot" data-index="0" aria-label="Imagen 1"></button>
+                <button class="dot" data-index="1" aria-label="Imagen 2"></button>
+                <button class="dot" data-index="2" aria-label="Imagen 3"></button>
             </div>
         </div>
     </section>
